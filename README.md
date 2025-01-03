@@ -1,1 +1,1 @@
-# Ly-iarsky-pl-nova-
+# Lyziarsky-planovac
