@@ -1,0 +1,109 @@
+{
+  "ski_resorts": [
+    {
+      "name": "Jasná Nízke Tatry",
+      "slug": "jasna-nizke-tatry",
+      "image": "jasna-nizke-tatry.jpg",
+      "id": 1,
+      "description": "Najväčšie lyžiarske stredisko na Slovensku s modernými lanovkami a množstvom zjazdoviek pre všetky úrovne lyžiarov.",
+      "experiences": [
+        {
+          "name": "Chopok Sever",
+          "slug": "chopok-sever",
+          "image": "chopok-sever.jpg",
+          "description": "Lyžovanie na severnej strane Chopka s výhľadmi na Liptov."
+        },
+        {
+          "name": "Chopok Juh",
+          "slug": "chopok-juh",
+          "image": "chopok-juh.jpg",
+          "description": "Slnkom zaliate zjazdovky južnej strany Chopka."
+        }
+      ]
+    },
+    {
+      "name": "Tatranská Lomnica",
+      "slug": "tatranska-lomnica",
+      "image": "tatranska-lomnica.jpg",
+      "id": 2,
+      "description": "Stredisko vo Vysokých Tatrách s najdlhšou zjazdovkou na Slovensku a nádhernými výhľadmi na Tatry.",
+      "experiences": [
+        {
+          "name": "Skalnaté Pleso",
+          "slug": "skalnate-pleso",
+          "image": "skalnate-pleso.jpg",
+          "description": "Lyžovanie pod Lomnickým štítom s modernými lanovkami."
+        },
+        {
+          "name": "Lomnické Sedlo",
+          "slug": "lomnicke-sedlo",
+          "image": "lomnicke-sedlo.jpg",
+          "description": "Adrenalínové zjazdy z najvyššej lyžiarskej trate na Slovensku."
+        }
+      ]
+    },
+    {
+      "name": "Štrbské Pleso",
+      "slug": "strbske-pleso",
+      "image": "strbske-pleso.jpg",
+      "id": 3,
+      "description": "Obľúbené stredisko na Štrbskom plese s kvalitnými traťami pre zjazdové i bežecké lyžovanie.",
+      "experiences": [
+        {
+          "name": "Interski Zjazdovka",
+          "slug": "interski",
+          "image": "interski.jpg",
+          "description": "Perfektná trať pre začiatočníkov aj pokročilých."
+        },
+        {
+          "name": "Bežecké Trate",
+          "slug": "bezecke-trate",
+          "image": "bezecke-trate.jpg",
+          "description": "Kvalitne upravené bežecké trate v srdci Tatier."
+        }
+      ]
+    },
+    {
+      "name": "Donovaly",
+      "slug": "donovaly",
+      "image": "donovaly.jpg",
+      "id": 4,
+      "description": "Rodinné lyžiarske stredisko s rozmanitými možnosťami pre zábavu na snehu.",
+      "experiences": [
+        {
+          "name": "Nová Hoľa",
+          "slug": "nova-hola",
+          "image": "nova-hola.jpg",
+          "description": "Dlhé zjazdovky a moderné lanovky na južnej strane."
+        },
+        {
+          "name": "Funpark Donovaly",
+          "slug": "funpark-donovaly",
+          "image": "funpark-donovaly.jpg",
+          "description": "Jeden z najväčších detských zimných parkov v Európe."
+        }
+      ]
+    },
+    {
+      "name": "Veľká Rača Oščadnica",
+      "slug": "velka-raca-oscadnica",
+      "image": "velka-raca-oscadnica.jpg",
+      "id": 5,
+      "description": "Moderné stredisko v Kysuciach so širokou ponukou aktivít pre lyžiarov aj snowboardistov.",
+      "experiences": [
+        {
+          "name": "Dedovka",
+          "slug": "dedovka",
+          "image": "dedovka.jpg",
+          "description": "Zjazdovky pre všetky úrovne, skvelá infraštruktúra."
+        },
+        {
+          "name": "Snowpark Veľká Rača",
+          "slug": "snowpark-velka-raca",
+          "image": "snowpark-velka-raca.jpg",
+          "description": "Perfektné miesto pre milovníkov freestyle lyžovania a snowboardingu."
+        }
+      ]
+    }
+  ]
+}

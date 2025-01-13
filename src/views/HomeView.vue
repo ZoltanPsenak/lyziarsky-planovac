@@ -1,9 +1,11 @@
+<template>
+  <div>
+    <h1>Vitajte na plánovači lyžovania!</h1>
+  </div>
+</template>
+
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped>
+</style>
