@@ -1,28 +1,33 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <Header />
-  <RouterView />
-  <Footer />
+  <div class="app-container">
+    <Header />
+    <main class="main-content">
+      <RouterView />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
   width: 100%;
-  font-size: 12px;
 }
 </style>

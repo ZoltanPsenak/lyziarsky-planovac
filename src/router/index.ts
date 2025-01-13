@@ -6,7 +6,7 @@ import RouteView from '@/views/RouteView.vue'
 import CostView from '@/views/CostView.vue'
 import ReservationsView from '@/views/ReservationsView.vue'
 import NotificationsView from '@/views/NotificationsView.vue'
-import StatisticsView from '@/views/StatisticsView.vue'
+import ResortDetailView from '@/views/ResortDetailView.vue'
 
 const routes = [
   { path: '/', component: HomeView },
@@ -16,7 +16,7 @@ const routes = [
   { path: '/cost', component: CostView },
   { path: '/reservations', component: ReservationsView },
   { path: '/notifications', component: NotificationsView },
-  { path: '/statistics', component: StatisticsView },
+  { path: '/resort/:id', name: 'resort-detail', component: ResortDetailView, props: true },
 ]
 
 const router = createRouter({
