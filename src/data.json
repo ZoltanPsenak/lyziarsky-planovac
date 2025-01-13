@@ -1,109 +1,404 @@
 {
   "ski_resorts": [
     {
-      "name": "Jasná Nízke Tatry",
-      "slug": "jasna-nizke-tatry",
-      "image": "jasna-nizke-tatry.jpg",
+      "name": "Vrátna Malá Fatra",
+      "slug": "vratna-mala-fatra",
+      "image": "vratna-mala-fatra.jpg",
+      "map": "vratna-mala-fatra-map.jpg",
       "id": 1,
-      "description": "Najväčšie lyžiarske stredisko na Slovensku s modernými lanovkami a množstvom zjazdoviek pre všetky úrovne lyžiarov.",
+      "description": "Populárne lyžiarske stredisko v pohorí Malá Fatra, známe širokými zjazdovkami a malebnou prírodou.",
+      "trailDescription": "Stredisko ponúka široké zjazdovky pre všetky úrovne lyžiarov, od začiatočníkov po pokročilých.",
+      "ticketInfo": {
+        "price": 30,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 20% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -5,
+        "snow": "20 cm",
+        "wind": 10,
+        "condition": "snowy"
+      },
+      "slopes": {
+        "open": 5,
+        "total": 10
+      },
+      "lifts": {
+        "open": 3,
+        "total": 5
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Ján Novák",
+          "rating": 5,
+          "comment": "Skvelé stredisko s výbornými podmienkami na lyžovanie."
+        },
+        {
+          "id": 2,
+          "user": "Petra Horváthová",
+          "rating": 4,
+          "comment": "Veľmi pekné stredisko, ale mohlo by byť viac otvorených zjazdoviek."
+        }
+      ],
+      "experiences": []
+    },
+    {
+      "name": "Snowland Valčianska Dolina",
+      "slug": "snowland-valcianska-dolina",
+      "image": "snowland-valcianska-dolina.jpg",
+      "map": "snowland-valcianska-dolina-map.jpg",
+      "id": 2,
+      "description": "Rodinné stredisko v blízkosti mesta Martin s kvalitnými službami a priateľskou atmosférou.",
+      "trailDescription": "Stredisko ponúka rôzne zjazdovky vhodné pre rodiny s deťmi a začiatočníkov.",
+      "ticketInfo": {
+        "price": 25,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 15% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -2,
+        "snow": "15 cm",
+        "wind": 5,
+        "condition": "cloudy"
+      },
+      "slopes": {
+        "open": 4,
+        "total": 8
+      },
+      "lifts": {
+        "open": 2,
+        "total": 4
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Marek Kováč",
+          "rating": 4,
+          "comment": "Príjemné stredisko, ideálne pre rodiny."
+        },
+        {
+          "id": 2,
+          "user": "Anna Novotná",
+          "rating": 5,
+          "comment": "Skvelé služby a priateľská atmosféra."
+        }
+      ],
+      "experiences": []
+    },
+    {
+      "name": "Jasná Chopok",
+      "slug": "jasna-chopok",
+      "image": "jasna-chopok.jpg",
+      "map": "jasna-chopok-map.jpg",
+      "id": 3,
+      "description": "Najväčšie lyžiarske stredisko na Slovensku s modernými lanovkami a rozmanitými zjazdovkami.",
+      "trailDescription": "Stredisko ponúka rozmanité zjazdovky pre všetky úrovne lyžiarov, vrátane náročných tratí.",
+      "ticketInfo": {
+        "price": 40,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 20% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -8,
+        "snow": "30 cm",
+        "wind": 15,
+        "condition": "snowy"
+      },
+      "slopes": {
+        "open": 10,
+        "total": 15
+      },
+      "lifts": {
+        "open": 5,
+        "total": 7
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Jozef Mrkvička",
+          "rating": 5,
+          "comment": "Najlepšie stredisko na Slovensku!"
+        },
+        {
+          "id": 2,
+          "user": "Eva Horáková",
+          "rating": 4,
+          "comment": "Veľmi dobré podmienky, ale trochu drahé."
+        }
+      ],
       "experiences": [
         {
           "name": "Chopok Sever",
           "slug": "chopok-sever",
           "image": "chopok-sever.jpg",
-          "description": "Lyžovanie na severnej strane Chopka s výhľadmi na Liptov."
+          "description": "Lyžovanie na severnej strane Chopka s úntulnými horskými chatami."
         },
         {
           "name": "Chopok Juh",
           "slug": "chopok-juh",
           "image": "chopok-juh.jpg",
-          "description": "Slnkom zaliate zjazdovky južnej strany Chopka."
+          "description": "Slnkom zaliate svahy južnej strany Chopka pre náročných lyžiarov."
         }
       ]
     },
     {
-      "name": "Tatranská Lomnica",
-      "slug": "tatranska-lomnica",
-      "image": "tatranska-lomnica.jpg",
-      "id": 2,
-      "description": "Stredisko vo Vysokých Tatrách s najdlhšou zjazdovkou na Slovensku a nádhernými výhľadmi na Tatry.",
-      "experiences": [
-        {
-          "name": "Skalnaté Pleso",
-          "slug": "skalnate-pleso",
-          "image": "skalnate-pleso.jpg",
-          "description": "Lyžovanie pod Lomnickým štítom s modernými lanovkami."
-        },
-        {
-          "name": "Lomnické Sedlo",
-          "slug": "lomnicke-sedlo",
-          "image": "lomnicke-sedlo.jpg",
-          "description": "Adrenalínové zjazdy z najvyššej lyžiarskej trate na Slovensku."
-        }
-      ]
-    },
-    {
-      "name": "Štrbské Pleso",
-      "slug": "strbske-pleso",
-      "image": "strbske-pleso.jpg",
-      "id": 3,
-      "description": "Obľúbené stredisko na Štrbskom plese s kvalitnými traťami pre zjazdové i bežecké lyžovanie.",
-      "experiences": [
-        {
-          "name": "Interski Zjazdovka",
-          "slug": "interski",
-          "image": "interski.jpg",
-          "description": "Perfektná trať pre začiatočníkov aj pokročilých."
-        },
-        {
-          "name": "Bežecké Trate",
-          "slug": "bezecke-trate",
-          "image": "bezecke-trate.jpg",
-          "description": "Kvalitne upravené bežecké trate v srdci Tatier."
-        }
-      ]
-    },
-    {
-      "name": "Donovaly",
-      "slug": "donovaly",
-      "image": "donovaly.jpg",
+      "name": "Ski Tále",
+      "slug": "ski-tale",
+      "image": "ski-tale.jpg",
+      "map": "ski-tale-map.jpg",
       "id": 4,
-      "description": "Rodinné lyžiarske stredisko s rozmanitými možnosťami pre zábavu na snehu.",
-      "experiences": [
+      "description": "Obľúbené stredisko na južnej strane Nízkych Tatier, ideálne pre rodiny s deťmi.",
+      "trailDescription": "Stredisko ponúka široké a bezpečné zjazdovky vhodné pre rodiny s deťmi.",
+      "ticketInfo": {
+        "price": 28,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 15% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -3,
+        "snow": "25 cm",
+        "wind": 8,
+        "condition": "sunny"
+      },
+      "slopes": {
+        "open": 6,
+        "total": 10
+      },
+      "lifts": {
+        "open": 4,
+        "total": 6
+      },
+      "reviews": [
         {
-          "name": "Nová Hoľa",
-          "slug": "nova-hola",
-          "image": "nova-hola.jpg",
-          "description": "Dlhé zjazdovky a moderné lanovky na južnej strane."
+          "id": 1,
+          "user": "Milan Štefánik",
+          "rating": 4,
+          "comment": "Pekné stredisko, ideálne pre rodiny."
         },
         {
-          "name": "Funpark Donovaly",
-          "slug": "funpark-donovaly",
-          "image": "funpark-donovaly.jpg",
-          "description": "Jeden z najväčších detských zimných parkov v Európe."
+          "id": 2,
+          "user": "Zuzana Kováčová",
+          "rating": 5,
+          "comment": "Skvelé podmienky a priateľská atmosféra."
         }
-      ]
+      ],
+      "experiences": []
     },
     {
-      "name": "Veľká Rača Oščadnica",
-      "slug": "velka-raca-oscadnica",
-      "image": "velka-raca-oscadnica.jpg",
+      "name": "Snowpark Lučivná",
+      "slug": "snowpark-lucivna",
+      "image": "snowpark-lucivna.jpg",
+      "map": "snowpark-lucivna-map.jpg",
       "id": 5,
-      "description": "Moderné stredisko v Kysuciach so širokou ponukou aktivít pre lyžiarov aj snowboardistov.",
-      "experiences": [
+      "description": "Menšie stredisko v blízkosti Vysokých Tatier, zamerané na rodinné lyžovanie a snowboardovanie.",
+      "trailDescription": "Stredisko ponúka rôzne zjazdovky vhodné pre rodiny a snowboardistov.",
+      "ticketInfo": {
+        "price": 20,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 10% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -4,
+        "snow": "18 cm",
+        "wind": 12,
+        "condition": "windy"
+      },
+      "slopes": {
+        "open": 3,
+        "total": 5
+      },
+      "lifts": {
+        "open": 2,
+        "total": 3
+      },
+      "reviews": [
         {
-          "name": "Dedovka",
-          "slug": "dedovka",
-          "image": "dedovka.jpg",
-          "description": "Zjazdovky pre všetky úrovne, skvelá infraštruktúra."
+          "id": 1,
+          "user": "Peter Novák",
+          "rating": 4,
+          "comment": "Príjemné stredisko, ideálne pre rodiny."
         },
         {
-          "name": "Snowpark Veľká Rača",
-          "slug": "snowpark-velka-raca",
-          "image": "snowpark-velka-raca.jpg",
-          "description": "Perfektné miesto pre milovníkov freestyle lyžovania a snowboardingu."
+          "id": 2,
+          "user": "Jana Horáková",
+          "rating": 3,
+          "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
-      ]
+      ],
+      "experiences": []
+    },
+    {
+      "name": "Ski Monkova Dolina",
+      "slug": "ski-monkova-dolina",
+      "image": "ski-monkova-dolina.jpg",
+      "map": "ski-monkova-dolina-map.jpg",
+      "id": 6,
+      "description": "Menšie a kľudné stredisko ideálne pre začiatočníkov a rodiny s deťmi.",
+      "trailDescription": "Stredisko ponúka bezpečné a široké zjazdovky vhodné pre začiatočníkov.",
+      "ticketInfo": {
+        "price": 18,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 10% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -6,
+        "snow": "22 cm",
+        "wind": 7,
+        "condition": "cloudy"
+      },
+      "slopes": {
+        "open": 2,
+        "total": 4
+      },
+      "lifts": {
+        "open": 1,
+        "total": 2
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Mária Kováčová",
+          "rating": 4,
+          "comment": "Pekné a kľudné stredisko, ideálne pre začiatočníkov."
+        },
+        {
+          "id": 2,
+          "user": "Jozef Horák",
+          "rating": 3,
+          "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
+        }
+      ],
+      "experiences": []
+    },
+    {
+      "name": "Bachledka Ski & Sun",
+      "slug": "bachledka-ski-sun",
+      "image": "bachledka-ski-sun.jpg",
+      "map": "bachledka-ski-sun-map.jpg",
+      "id": 7,
+      "description": "Obľúbené stredisko v Pieninách s jedinečnou vyhliadkovou vežou v korunách stromov.",
+      "trailDescription": "Stredisko ponúka rôzne zjazdovky a jedinečnú vyhliadkovú vežu v korunách stromov.",
+      "ticketInfo": {
+        "price": 35,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 15% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -5,
+        "snow": "20 cm",
+        "wind": 10,
+        "condition": "snowy"
+      },
+      "slopes": {
+        "open": 5,
+        "total": 8
+      },
+      "lifts": {
+        "open": 3,
+        "total": 4
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Milan Štefánik",
+          "rating": 5,
+          "comment": "Jedinečné stredisko s krásnou vyhliadkovou vežou."
+        },
+        {
+          "id": 2,
+          "user": "Zuzana Kováčová",
+          "rating": 4,
+          "comment": "Skvelé podmienky, ale mohlo by byť viac otvorených zjazdoviek."
+        }
+      ],
+      "experiences": []
+    },
+    {
+      "name": "Jurgow Ski (Poľsko)",
+      "slug": "jurgow-ski-polsko",
+      "image": "jurgow-ski.jpg",
+      "map": "jurgow-ski-map.jpg",
+      "id": 8,
+      "description": "Príjemné stredisko na poľskej strane hranice, vzdialené 370 km od Bratislavy.",
+      "trailDescription": "Stredisko ponúka rôzne zjazdovky vhodné pre rodiny a začiatočníkov.",
+      "ticketInfo": {
+        "price": 25,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 15% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -7,
+        "snow": "28 cm",
+        "wind": 9,
+        "condition": "snowy"
+      },
+      "slopes": {
+        "open": 4,
+        "total": 6
+      },
+      "lifts": {
+        "open": 2,
+        "total": 3
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Peter Novák",
+          "rating": 4,
+          "comment": "Príjemné stredisko, ideálne pre rodiny."
+        },
+        {
+          "id": 2,
+          "user": "Jana Horáková",
+          "rating": 3,
+          "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
+        }
+      ],
+      "experiences": []
+    },
+    {
+      "name": "Stuhleck (Rakúsko)",
+      "slug": "stuhleck-rakusko",
+      "image": "stuhleck.jpg",
+      "map": "stuhleck-map.jpg",
+      "id": 9,
+      "description": "Rakúska destinácia vzdialená len 150 km od Bratislavy, ideálna pre celodenný výlet.",
+      "trailDescription": "Stredisko ponúka rôzne zjazdovky vhodné pre všetky úrovne lyžiarov.",
+      "ticketInfo": {
+        "price": 35,
+        "discounts": "Deti do 6 rokov zdarma, študenti a seniori 15% zľava",
+        "onlinePurchaseLink": "https://example.com/skipas"
+      },
+      "weather": {
+        "temperature": -3,
+        "snow": "25 cm",
+        "wind": 11,
+        "condition": "sunny"
+      },
+      "slopes": {
+        "open": 7,
+        "total": 10
+      },
+      "lifts": {
+        "open": 4,
+        "total": 5
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Milan Štefánik",
+          "rating": 5,
+          "comment": "Skvelé stredisko, ideálne pre celodenný výlet."
+        },
+        {
+          "id": 2,
+          "user": "Zuzana Kováčová",
+          "rating": 4,
+          "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
+        }
+      ],
+      "experiences": []
     }
   ]
 }

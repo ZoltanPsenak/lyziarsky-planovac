@@ -44,7 +44,7 @@ const viewDetails = (id: number) => {
   transition: box-shadow 0.3s;
   width: 80%;
   max-width: 600px;
-  cursor: pointer; /* Add cursor pointer */
+  cursor: pointer; 
 }
 
 .resort:hover {

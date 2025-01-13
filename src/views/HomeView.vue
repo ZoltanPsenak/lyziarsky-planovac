@@ -1,27 +1,25 @@
 <template>
   <div class="home-view">
     <header class="hero">
-      <h1>Vitajte v Lyžiarskom Plánovači!</h1>
-      <p>Naplánujte si dokonalý lyžiarsky víkend preskúmaním našich stredísk, vytvorením itinerára a správou rezervácií.</p>
+      <div class="header-content">
+        <h1>Vitajte v Lyžiarskom Plánovači!</h1>
+        <p>Naplánujte si dokonalý lyžiarsky víkend preskúmaním našich stredísk, vytvorením itinerára a správou rezervácií.</p>
+      </div>
     </header>
-    <section class="info-section">
-      <h2>Čo plánovač obsahuje:</h2>
-      <ul>
-        <li>Vyhľadávanie lyžiarskych stredísk</li>
-        <li>Vytváranie a správa itinerára</li>
-        <li>Výpočet nákladov a trás</li>
-        <li>Vykonávanie rezervácií</li>
-        <li>Prijímanie upozornení</li>
-      </ul>
+    <section class="map-overview">
+      <img src="@/assets/mapa.jpg" alt="Mapa lyžiarskych stredísk" class="map-image" />
     </section>
-    <section class="featured-resorts">
-      <h2>Odporúčané Lyžiarske Strediská</h2>
-      <div class="resorts-list">
-        <div v-for="resort in skiResorts" :key="resort.id" class="resort">
-          <img :src="getImageUrl(resort.image)" :alt="resort.name" />
+    <section class="resort-overview">
+      <h2>Prehľad Počasia a Podmienok na Lyžovanie</h2>
+      <div class="resort-details">
+        <div v-for="resort in skiResorts" :key="resort.id" class="resort-item">
+          <img :src="getImageUrl(resort.image)" :alt="resort.name" class="resort-thumbnail" />
           <h3>{{ resort.name }}</h3>
-          <p>{{ resort.description }}</p>
-          <RouterLink :to="{ name: 'resort-detail', params: { id: resort.id } }">Zobraziť Detaily</RouterLink>
+          <p><font-awesome-icon :icon="getWeatherIcon(resort.weather.condition)" /> Teplota: {{ resort.weather.temperature }}°C</p>
+          <p>Snehové podmienky: {{ resort.weather.snow }}</p>
+          <p>Vietor: {{ resort.weather.wind }} km/h</p>
+          <p>Zjazdovky: {{ resort.slopes.open }} / {{ resort.slopes.total }} otvorené</p>
+          <p>Vleky: {{ resort.lifts.open }} / {{ resort.lifts.total }} otvorené</p>
         </div>
       </div>
     </section>
@@ -31,10 +29,29 @@
 <script setup lang="ts">
 import { useSkiResortsStore } from '@/stores/skiResorts'
 import { computed } from 'vue'
-import { RouterLink } from 'vue-router'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faSun, faCloud, faSnowflake, faWind } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faSun, faCloud, faSnowflake, faWind)
 
 const skiResortsStore = useSkiResortsStore()
 const skiResorts = computed(() => skiResortsStore.skiResorts)
+
+const getWeatherIcon = (condition) => {
+  switch (condition) {
+    case 'sunny':
+      return 'sun'
+    case 'cloudy':
+      return 'cloud'
+    case 'snowy':
+      return 'snowflake'
+    case 'windy':
+      return 'wind'
+    default:
+      return 'cloud'
+  }
+}
 
 const getImageUrl = (imageName: string) => {
   return new URL(`../assets/${imageName}`, import.meta.url).href
@@ -61,70 +78,48 @@ const getImageUrl = (imageName: string) => {
   width: 100%;
 }
 
-.info-section {
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-overview {
   margin: 2rem 0;
-  padding: 2rem;
-  background-color: var(--color-background-soft);
+}
+
+.map-image {
+  width: 100%;
+  max-width: 800px;
   border-radius: 8px;
-  width: 80%;
 }
 
-.info-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.info-section li {
-  margin: 0.5rem 0;
-}
-
-.featured-resorts {
+.resort-overview {
   margin: 2rem 0;
   width: 80%;
 }
 
-.resorts-list {
+.resort-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 
-.resort {
+.resort-item {
   background-color: var(--color-background-soft);
   border: 1px solid var(--color-border);
   padding: 1rem;
   border-radius: 8px;
-  transition: box-shadow 0.3s;
   width: 300px;
+  text-align: center;
 }
 
-.resort:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.resort img {
+.resort-thumbnail {
   width: 100%;
-  height: auto;
-}
-
-.resort h3 {
-  margin: 0.5rem 0;
-}
-
-.resort p {
-  margin: 0.5rem 0;
-}
-
-.resort a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: var(--vt-c-indigo);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.resort a:hover {
-  text-decoration: underline;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 </style>

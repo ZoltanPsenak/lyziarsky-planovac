@@ -5,6 +5,14 @@
       <img :src="getImageUrl(resort.image)" :alt="resort.name" />
       <h3>{{ resort.name }}</h3>
       <p>{{ resort.description }}</p>
+      <div class="form-group">
+        <label for="numAdults">Počet dospelých:</label>
+        <input type="number" v-model.number="numAdults" id="numAdults" min="0" />
+      </div>
+      <div class="form-group">
+        <label for="numChildren">Počet detí:</label>
+        <input type="number" v-model.number="numChildren" id="numChildren" min="0" />
+      </div>
       <button @click="calculateCost(resort)">Vypočítať Náklady</button>
     </div>
     <h3>Detaily Nákladov</h3>
@@ -19,9 +27,14 @@ import { ref, computed } from 'vue'
 const skiResortsStore = useSkiResortsStore()
 const skiResorts = computed(() => skiResortsStore.skiResorts)
 const costDetails = ref('')
+const numAdults = ref(0)
+const numChildren = ref(0)
 
 const calculateCost = (resort) => {
-  costDetails.value = `Náklady na ${resort.name} vypočítané.`
+  const adultTicketPrice = resort.ticketInfo.price
+  const childTicketPrice = 0 
+  const totalCost = (numAdults.value * adultTicketPrice) + (numChildren.value * childTicketPrice)
+  costDetails.value = `Náklady na ${resort.name}: ${totalCost} EUR (Dospelí: ${numAdults.value}, Deti: ${numChildren.value})`
 }
 
 const getImageUrl = (imageName) => {
@@ -52,7 +65,34 @@ const getImageUrl = (imageName) => {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
 button {
   margin-top: 1rem;
+  background-color: var(--vt-c-indigo);
+  color: var(--vt-c-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: var(--vt-c-indigo-soft);
 }
 </style>

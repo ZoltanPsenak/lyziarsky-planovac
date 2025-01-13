@@ -8,7 +8,6 @@
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
-
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
   --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
@@ -18,6 +17,10 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --vt-c-indigo: #4b0082;
+  --vt-c-indigo-soft: #6a0dad;
+  --vt-c-indigo-light: #8a2be2;
 }
 
 /* semantic color variables for this project */
@@ -66,19 +69,8 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 15px;
+    'Inter', sans-serif;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -87,6 +79,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 p {
@@ -102,9 +95,11 @@ button {
   background-color: var(--vt-c-indigo);
   color: var(--vt-c-white);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -135,6 +130,7 @@ button:hover {
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s;
+  border-radius: 8px;
 }
 
 .nav a:hover {

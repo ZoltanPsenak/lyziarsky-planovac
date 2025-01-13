@@ -1,14 +1,16 @@
 <template>
   <header class="header">
-    <img alt="Logo Lyžiarskeho Plánovača" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-    <nav class="nav">
-      <RouterLink to="/">Domov</RouterLink>
-      <RouterLink to="/search">Vyhľadávanie Stredísk</RouterLink>
-      <RouterLink to="/itinerary">Plánovač Itinerára</RouterLink>
-      <RouterLink to="/route">Trasy a Náklady</RouterLink>
-      <RouterLink to="/reservations">Rezervácie</RouterLink>
-      <RouterLink to="/notifications">Upozornenia</RouterLink>
-    </nav>
+    <div class="header-content">
+      <img alt="Logo Lyžiarskeho Plánovača" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+      <nav class="nav">
+        <RouterLink to="/">Domov</RouterLink>
+        <RouterLink to="/search">Vyhľadávanie Stredísk</RouterLink>
+        <RouterLink to="/itinerary">Plánovač Itinerára</RouterLink>
+        <RouterLink to="/route">Trasy a Náklady</RouterLink>
+        <RouterLink to="/reservations">Rezervácie</RouterLink>
+        <RouterLink to="/notifications">Upozornenia</RouterLink>
+      </nav>
+    </div>
   </header>
 </template>
 
@@ -18,13 +20,20 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 .header {
+  width: 100%;
+  background-color: var(--vt-c-indigo);
+  color: var(--vt-c-white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--vt-c-indigo);
-  color: var(--vt-c-white);
-  padding: 1rem;
-  text-align: center;
 }
 
 .logo {
@@ -43,6 +52,7 @@ import { RouterLink } from 'vue-router'
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s;
+  border-radius: 8px;
 }
 
 .nav a:hover {

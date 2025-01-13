@@ -3,14 +3,29 @@
     <h2>{{ resort.name }}</h2>
     <img :src="getImageUrl(resort.image)" :alt="resort.name" class="resort-image" />
     <p>{{ resort.description }}</p>
-    <h3>Skúsenosti</h3>
-    <ul class="experiences-list">
-      <li v-for="experience in resort.experiences" :key="experience.slug" class="experience-item">
-        <img :src="getImageUrl(experience.image)" :alt="experience.name" class="experience-image" />
-        <div class="experience-info">
-          <h4>{{ experience.name }}</h4>
-          <p>{{ experience.description }}</p>
-        </div>
+    
+    <h3>Mapa a Popis Trás</h3>
+    <img :src="getImageUrl(resort.map)" :alt="'Mapa strediska'" class="resort-map" />
+    <p>{{ resort.trailDescription }}</p>
+    
+    <h3>Informácie o Vstupenkách</h3>
+    <p>Cena skipasu: {{ resort.ticketInfo.price }} €</p>
+    <p>Zľavy: {{ resort.ticketInfo.discounts }}</p>
+    <p><a :href="resort.ticketInfo.onlinePurchaseLink" target="_blank">Kúpiť skipas online</a></p>
+    
+    <h3>Stav Snehu a Zjazdoviek</h3>
+    <p>Teplota: {{ resort.weather.temperature }}°C</p>
+    <p>Snehové podmienky: {{ resort.weather.snow }}</p>
+    <p>Vietor: {{ resort.weather.wind }} km/h</p>
+    <p>Zjazdovky: {{ resort.slopes.open }} / {{ resort.slopes.total }} otvorené</p>
+    <p>Vleky: {{ resort.lifts.open }} / {{ resort.lifts.total }} otvorené</p>
+    
+    <h3>Recenzie a Hodnotenia</h3>
+    <ul class="reviews-list">
+      <li v-for="review in resort.reviews" :key="review.id" class="review-item">
+        <h4>{{ review.user }}</h4>
+        <p>Hodnotenie: {{ review.rating }} / 5</p>
+        <p>{{ review.comment }}</p>
       </li>
     </ul>
   </div>
@@ -47,51 +62,25 @@ const getImageUrl = (imageName: string) => {
   padding: 2rem;
 }
 
-.resort-image {
+.resort-image, .resort-map {
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-.experiences-list {
+.reviews-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
 }
 
-.experience-item {
+.review-item {
   background-color: var(--color-background-soft);
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 1rem;
-  width: 300px;
-  transition: box-shadow 0.3s;
-}
-
-.experience-item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.experience-image {
+  margin-bottom: 1rem;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
-
-.experience-info {
-  text-align: left;
-}
-
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 1.5rem;
+  max-width: 600px;
 }
 </style>

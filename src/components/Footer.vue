@@ -11,8 +11,9 @@
 .footer {
   background-color: var(--vt-c-indigo);
   color: var(--vt-c-white);
-  padding: 1rem;
   text-align: center;
   width: 100%;
+  bottom: 0;
+  left: 0;
 }
 </style>
