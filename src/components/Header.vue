@@ -5,8 +5,8 @@
       <nav class="nav">
         <RouterLink to="/" class="nav-link" active-class="active-link">Domov</RouterLink>
         <RouterLink to="/search" class="nav-link" active-class="active-link">Vyhľadávanie</RouterLink>
+        <RouterLink to="/route" class="nav-link" active-class="active-link">Porovnávanie</RouterLink>
         <RouterLink to="/itinerary" class="nav-link" active-class="active-link">Itinerária</RouterLink>
-        <RouterLink to="/route" class="nav-link" active-class="active-link">Trasy a náklady</RouterLink>
         <RouterLink to="/reservations" class="nav-link" active-class="active-link">Rezervácie</RouterLink>
         <RouterLink to="/notifications" class="nav-link" active-class="active-link">Upozornenia</RouterLink>
       </nav>

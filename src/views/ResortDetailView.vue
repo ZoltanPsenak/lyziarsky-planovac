@@ -16,17 +16,16 @@
       <h3>Informácie o vstupenkách</h3>
       <p>Cena skipasu: <strong>{{ resort.ticketInfo.price }} €</strong></p>
       <p>Zľavy: {{ resort.ticketInfo.discounts }}</p>
-      <p><a :href="resort.ticketInfo.onlinePurchaseLink" target="_blank" class="button">Kúpiť skipas online</a></p>
     </div>
     
     <hr class="section-divider" />
     <div class="section">
       <h3>Stav snehu a zjazdoviek</h3>
-      <p>Teplota: <strong>{{ resort.weather.temperature }}°C</strong></p>
-      <p>Snehové podmienky: {{ resort.weather.snow }}</p>
-      <p>Vietor: {{ resort.weather.wind }} km/h</p>
-      <p>Zjazdovky: {{ resort.slopes.open }} / {{ resort.slopes.total }} otvorené</p>
-      <p>Vleky: {{ resort.lifts.open }} / {{ resort.lifts.total }} otvorené</p>
+      <p><i class="fas fa-thermometer-half"></i> Teplota: <strong>{{ resort.weather.temperature }}°C</strong></p>
+      <p><i class="fas fa-snowflake"></i> Snehové podmienky: {{ resort.weather.snow }}</p>
+      <p><i class="fas fa-wind"></i> Vietor: {{ resort.weather.wind }} km/h</p>
+      <p><i class="fas fa-mountain"></i> Zjazdovky: {{ resort.slopes.open }} / {{ resort.slopes.total }} otvorené</p>
+      <p><i class="fas fa-ski-lift"></i> Vleky: {{ resort.lifts.open }} / {{ resort.lifts.total }} otvorené</p>
     </div>
     
     <hr class="section-divider" />
@@ -36,6 +35,9 @@
         <li v-for="review in resort.reviews" :key="review.id" class="review-item">
           <h4>{{ review.user }}</h4>
           <p>Hodnotenie: <strong>{{ review.rating }} / 5</strong></p>
+          <div class="stars">
+            <span v-for="n in 5" :key="n" class="star" :class="{ filled: n <= review.rating }">&#9733;</span>
+          </div>
           <p>{{ review.comment }}</p>
         </li>
       </ul>
@@ -50,18 +52,6 @@
           <p>Cena za noc: <strong>{{ hotel.price_per_night }} €</strong></p>
           <p>Maximálny počet osôb na izbu: {{ hotel.max_persons_per_room }}</p>
           <img :src="getImageUrl(hotel.image)" :alt="hotel.name" class="hotel-image" />
-        </li>
-      </ul>
-    </div>
-
-    <hr class="section-divider" />
-    <div class="section" v-if="resort.experiences && resort.experiences.length">
-      <h3>Zážitky</h3>
-      <ul class="experiences-list">
-        <li v-for="experience in resort.experiences" :key="experience.slug" class="experience-item">
-          <h4>{{ experience.name }}</h4>
-          <p>{{ experience.description }}</p>
-          <img :src="getImageUrl(experience.image)" :alt="experience.name" class="experience-image" />
         </li>
       </ul>
     </div>
@@ -112,12 +102,6 @@ interface Resort {
     max_persons_per_room: number;
     image: string;
   }[];
-  experiences: {
-    slug: string;
-    name: string;
-    description: string;
-    image: string;
-  }[];
 }
 
 const route = useRoute()
@@ -148,7 +132,7 @@ const getImageUrl = (imageName: string) => {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.resort-image, .hotel-image, .experience-image {
+.resort-image, .hotel-image {
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
@@ -192,13 +176,13 @@ const getImageUrl = (imageName: string) => {
   background-color: var(--vt-c-orange-soft);
 }
 
-.reviews-list, .hotels-list, .experiences-list {
+.reviews-list, .hotels-list {
   list-style: none;
   padding: 0;
   text-align: center;
 }
 
-.review-item, .hotel-item, .experience-item {
+.review-item, .hotel-item {
   background-color: var(--color-background-soft);
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -209,5 +193,19 @@ const getImageUrl = (imageName: string) => {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.star.filled {
+  color: #f39c12;
 }
 </style>
