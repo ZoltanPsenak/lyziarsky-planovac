@@ -41,7 +41,6 @@
           "comment": "Veľmi pekné stredisko, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Vrátna",
@@ -98,7 +97,6 @@
           "comment": "Skvelé služby a priateľská atmosféra."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Snowland",
@@ -153,20 +151,6 @@
           "user": "Eva Horáková",
           "rating": 4,
           "comment": "Veľmi dobré podmienky, ale trochu drahé."
-        }
-      ],
-      "experiences": [
-        {
-          "name": "Chopok Sever",
-          "slug": "chopok-sever",
-          "image": "chopok-sever.jpg",
-          "description": "Lyžovanie na severnej strane Chopka s úntulnými horskými chatami."
-        },
-        {
-          "name": "Chopok Juh",
-          "slug": "chopok-juh",
-          "image": "chopok-juh.jpg",
-          "description": "Slnkom zaliate svahy južnej strany Chopka pre náročných lyžiarov."
         }
       ],
       "hotels": [
@@ -225,7 +209,6 @@
           "comment": "Skvelé podmienky a priateľská atmosféra."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Tále",
@@ -282,7 +265,6 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Lučivná",
@@ -339,7 +321,6 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Monkova",
@@ -396,7 +377,6 @@
           "comment": "Skvelé podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Bachledka",
@@ -453,7 +433,6 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Jurgow",
@@ -510,7 +489,6 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": [],
       "hotels": [
         {
           "name": "Hotel Stuhleck",

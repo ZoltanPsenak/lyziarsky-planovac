@@ -196,7 +196,7 @@ const getImageUrl = (imageName: string) => {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--color-background-soft);
+  background-color: var(--color-background-soft); /* Zjednotené pozadie */
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);

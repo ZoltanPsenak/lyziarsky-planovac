@@ -7,8 +7,8 @@
           <img :src="getImageUrl(resort.image)" :alt="resort.name" class="resort-image" />
           <h3>{{ resort.name }}</h3>
           <p>{{ resort.description }}</p>
-          <button class="subscribe-button" @click="subscribeToNotifications(resort)">Prihlásiť sa na Upozornenia</button>
-          <button class="unsubscribe-button" @click="unsubscribeFromNotifications(resort)">Zrušiť odber Upozornení</button>
+          <button class="subscribe-button" @click="subscribeToNotifications(resort)">Prihlásiť sa na upozornenia</button>
+          <button class="unsubscribe-button" @click="unsubscribeFromNotifications(resort)">Zrušiť odber upozornení</button>
         </div>
       </div>
       <div class="notifications-list" v-if="subscribedResort">

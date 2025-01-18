@@ -6,14 +6,14 @@
     
     <hr class="section-divider" />
     <div class="section">
-      <h3>Mapa a Popis Trás</h3>
+      <h3>Mapa a popis Trás</h3>
       <img :src="getImageUrl(resort.map)" :alt="'Mapa strediska'" class="resort-map" />
       <p>{{ resort.trailDescription }}</p>
     </div>
     
     <hr class="section-divider" />
     <div class="section">
-      <h3>Informácie o Vstupenkách</h3>
+      <h3>Informácie o vstupenkách</h3>
       <p>Cena skipasu: <strong>{{ resort.ticketInfo.price }} €</strong></p>
       <p>Zľavy: {{ resort.ticketInfo.discounts }}</p>
       <p><a :href="resort.ticketInfo.onlinePurchaseLink" target="_blank" class="button">Kúpiť skipas online</a></p>
@@ -21,7 +21,7 @@
     
     <hr class="section-divider" />
     <div class="section">
-      <h3>Stav Snehu a Zjazdoviek</h3>
+      <h3>Stav snehu a zjazdoviek</h3>
       <p>Teplota: <strong>{{ resort.weather.temperature }}°C</strong></p>
       <p>Snehové podmienky: {{ resort.weather.snow }}</p>
       <p>Vietor: {{ resort.weather.wind }} km/h</p>
@@ -31,7 +31,7 @@
     
     <hr class="section-divider" />
     <div class="section">
-      <h3>Recenzie a Hodnotenia</h3>
+      <h3>Recenzie a hodnotenia</h3>
       <ul class="reviews-list">
         <li v-for="review in resort.reviews" :key="review.id" class="review-item">
           <h4>{{ review.user }}</h4>
