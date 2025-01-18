@@ -9,7 +9,12 @@
       <div class="form-group">
         <label for="destination">Destinácia:</label>
         <div class="resort-options">
-          <div v-for="resort in skiResorts" :key="resort.id" class="resort-option" @click="selectResort(resort)">
+          <div
+            v-for="resort in skiResorts"
+            :key="resort.id"
+            :class="['resort-option', { selected: resort === selectedResort }]"
+            @click="selectResort(resort)"
+          >
             <img :src="getImageUrl(resort.image)" :alt="resort.name" class="resort-image" /> {{ resort.name }}
           </div>
         </div>
@@ -17,7 +22,12 @@
       <div v-if="selectedResort" class="form-group">
         <label for="hotel">Hotel:</label>
         <div class="hotel-grid">
-          <div v-for="hotel in hotels" :key="hotel.name" class="hotel-item" @click="selectHotel(hotel)">
+          <div
+            v-for="hotel in hotels"
+            :key="hotel.name"
+            :class="['hotel-item', { selected: hotel === selectedHotel }]"
+            @click="selectHotel(hotel)"
+          >
             <img :src="getImageUrl(hotel.image)" :alt="hotel.name" class="hotel-thumbnail" /> {{ hotel.name }}
           </div>
         </div>
@@ -203,6 +213,11 @@ const submitForm = () => {
   background-color: var(--vt-c-indigo-soft);
 }
 
+.resort-option.selected {
+  background-color: var(--vt-c-indigo);
+  color: var(--vt-c-white);
+}
+
 .resort-image {
   width: 100%;
   height: 100%;
@@ -230,6 +245,11 @@ const submitForm = () => {
 
 .hotel-item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-item.selected {
+  background-color: var(--vt-c-indigo);
+  color: var(--vt-c-white);
 }
 
 .hotel-thumbnail {
