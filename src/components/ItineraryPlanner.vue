@@ -7,7 +7,6 @@
   
   <script setup lang="ts">
   import ItineraryForm from './ItineraryForm.vue'
-  import ItineraryList from './ItineraryList.vue'
   </script>
   
   <style scoped>

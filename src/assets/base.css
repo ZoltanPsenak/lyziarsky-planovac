@@ -18,9 +18,9 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
-  --vt-c-indigo: #4b0082;
-  --vt-c-indigo-soft: #6a0dad;
-  --vt-c-indigo-light: #8a2be2;
+  --vt-c-indigo: #ffaa00;
+  --vt-c-indigo-soft: #ffaa00;
+  --vt-c-indigo-light: #ffaa00;
 }
 
 /* semantic color variables for this project */

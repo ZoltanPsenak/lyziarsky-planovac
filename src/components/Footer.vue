@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <p>&copy; 2024 Lyžiarsky Plánovač. Všetky práva vyhradené.</p>
+    <p>&copy; 2024 Zoltán Pšenák. Všetky práva vyhradené.</p>
   </footer>
 </template>
 

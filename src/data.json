@@ -41,7 +41,21 @@
           "comment": "Veľmi pekné stredisko, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Vrátna",
+          "price_per_night": 80,
+          "max_persons_per_room": 4,
+          "image": "hotel-vratna.jpg"
+        },
+        {
+          "name": "Penzión Malá Fatra",
+          "price_per_night": 60,
+          "max_persons_per_room": 3,
+          "image": "penzion-mala-fatra.jpg"
+        }
+      ]
     },
     {
       "name": "Snowland Valčianska Dolina",
@@ -84,7 +98,21 @@
           "comment": "Skvelé služby a priateľská atmosféra."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Snowland",
+          "price_per_night": 70,
+          "max_persons_per_room": 4,
+          "image": "hotel-snowland.jpg"
+        },
+        {
+          "name": "Penzión Valčianska Dolina",
+          "price_per_night": 55,
+          "max_persons_per_room": 3,
+          "image": "penzion-valcianska-dolina.jpg"
+        }
+      ]
     },
     {
       "name": "Jasná Chopok",
@@ -140,6 +168,20 @@
           "image": "chopok-juh.jpg",
           "description": "Slnkom zaliate svahy južnej strany Chopka pre náročných lyžiarov."
         }
+      ],
+      "hotels": [
+        {
+          "name": "Hotel Jasná",
+          "price_per_night": 100,
+          "max_persons_per_room": 4,
+          "image": "hotel-jasna.jpg"
+        },
+        {
+          "name": "Penzión Chopok",
+          "price_per_night": 80,
+          "max_persons_per_room": 3,
+          "image": "penzion-chopok.jpg"
+        }
       ]
     },
     {
@@ -183,7 +225,21 @@
           "comment": "Skvelé podmienky a priateľská atmosféra."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Tále",
+          "price_per_night": 90,
+          "max_persons_per_room": 4,
+          "image": "hotel-tale.jpg"
+        },
+        {
+          "name": "Penzión Nízke Tatry",
+          "price_per_night": 70,
+          "max_persons_per_room": 3,
+          "image": "penzion-nizke-tatry.jpg"
+        }
+      ]
     },
     {
       "name": "Snowpark Lučivná",
@@ -226,7 +282,21 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Lučivná",
+          "price_per_night": 60,
+          "max_persons_per_room": 3,
+          "image": "hotel-lucivna.jpg"
+        },
+        {
+          "name": "Penzión Tatry",
+          "price_per_night": 50,
+          "max_persons_per_room": 2,
+          "image": "penzion-tatry.jpg"
+        }
+      ]
     },
     {
       "name": "Ski Monkova Dolina",
@@ -269,7 +339,21 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Monkova",
+          "price_per_night": 50,
+          "max_persons_per_room": 3,
+          "image": "hotel-monkova.jpg"
+        },
+        {
+          "name": "Penzión Dolina",
+          "price_per_night": 40,
+          "max_persons_per_room": 2,
+          "image": "penzion-dolina.jpg"
+        }
+      ]
     },
     {
       "name": "Bachledka Ski & Sun",
@@ -312,7 +396,21 @@
           "comment": "Skvelé podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Bachledka",
+          "price_per_night": 85,
+          "max_persons_per_room": 4,
+          "image": "hotel-bachledka.jpg"
+        },
+        {
+          "name": "Penzión Pieniny",
+          "price_per_night": 65,
+          "max_persons_per_room": 3,
+          "image": "penzion-pieniny.jpg"
+        }
+      ]
     },
     {
       "name": "Jurgow Ski (Poľsko)",
@@ -355,7 +453,21 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Jurgow",
+          "price_per_night": 70,
+          "max_persons_per_room": 4,
+          "image": "hotel-jurgow.jpg"
+        },
+        {
+          "name": "Penzión Poľsko",
+          "price_per_night": 55,
+          "max_persons_per_room": 3,
+          "image": "penzion-polsko.jpg"
+        }
+      ]
     },
     {
       "name": "Stuhleck (Rakúsko)",
@@ -398,7 +510,21 @@
           "comment": "Dobré podmienky, ale mohlo by byť viac otvorených zjazdoviek."
         }
       ],
-      "experiences": []
+      "experiences": [],
+      "hotels": [
+        {
+          "name": "Hotel Stuhleck",
+          "price_per_night": 90,
+          "max_persons_per_room": 4,
+          "image": "hotel-stuhleck.jpg"
+        },
+        {
+          "name": "Penzión Alpenblick",
+          "price_per_night": 65,
+          "max_persons_per_room": 3,
+          "image": "penzion-alpenblick.jpg"
+        }
+      ]
     }
   ]
 }

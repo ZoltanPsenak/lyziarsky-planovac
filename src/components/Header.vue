@@ -1,12 +1,12 @@
 <template>
   <header class="header">
     <div class="header-content">
-      <img alt="Logo Lyžiarskeho Plánovača" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+      <img alt="Logo Lyžiarskeho Plánovača" class="logo" src="@/assets/logo.svg" width="40" height="40" />
       <nav class="nav">
         <RouterLink to="/">Domov</RouterLink>
-        <RouterLink to="/search">Vyhľadávanie Stredísk</RouterLink>
-        <RouterLink to="/itinerary">Plánovač Itinerára</RouterLink>
-        <RouterLink to="/route">Trasy a Náklady</RouterLink>
+        <RouterLink to="/search">Vyhľadávanie</RouterLink>
+        <RouterLink to="/itinerary">Itinerária</RouterLink>
+        <RouterLink to="/route">Trasy a náklady</RouterLink>
         <RouterLink to="/reservations">Rezervácie</RouterLink>
         <RouterLink to="/notifications">Upozornenia</RouterLink>
       </nav>
