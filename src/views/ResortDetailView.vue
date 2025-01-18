@@ -75,7 +75,6 @@ interface Resort {
   ticketInfo: {
     price: number;
     discounts: string;
-    onlinePurchaseLink: string;
   };
   weather: {
     temperature: number;
